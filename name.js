@@ -6,4 +6,4 @@ console.log(res.length);
 
 var A = res.indexOf("Arnell");
 
-console.log(A);
+console.log(A +1);
