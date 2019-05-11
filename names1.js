@@ -2,18 +2,21 @@ var namesList = "Stuart Yoshi Denton Hayley Indigo Timothy Brianna Nathaniel Eze
 
 var namesArray = namesList.split(" ");
     // console.log(namesArray);
+    
+console.log("Arnell is number", namesArray.indexOf("Arnell") +1, "in the list");
 
-var counter = 0;
+// var counter = 0;
    
-   for (var i = 0; i < namesArray.length; i++){
-       if (namesArray[i] == "Arnell") {
-           counter++;
-           if(counter == 1){
-           console.log("Arnell is number", i+1, "in the list!");
+//   for (var i = 0; i < namesArray.length; i++){
+        
+//       if (namesArray[i] == "Arnell") {
+//           counter++;
+//           if(counter == 1){
+//           console.log("Arnell is number", i+1, "in the list!");
       
-           }
-       }
-   } 
+//           }
+//       }
+//   } 
    
     
 // for ( var i = 0; i < namesArray.length; i++){
