@@ -1,6 +1,6 @@
 var hello = " hello 10 times!";
 
-for ( var i = 0; i <= 10 ; i++){
+for ( var i = 0; i <= 9; i++){
     console.log(hello);
 }
 
