@@ -1,4 +1,4 @@
-var guestList = "Lisette Nicole Arnell Joseph Jason";
+var guestList = "Lisette Nicole Arnell Joseph Jason Nicole";
 
 var arrayGuestList = guestList.split(" ");
 
@@ -9,8 +9,8 @@ var counter = 0;
 for (i = 0; i < arrayGuestList.length; i++ ) {
     if ( arrayGuestList[i] == "Nicole") {
         counter++;
-        if (counter == 1) {
-            console.log("Found", arrayGuestList[i], "in position", i +1);
+        if (counter == 2) {
+            console.log("Found", arrayGuestList[i], "a second time, in position", i +1);
         }
     }
 }
