@@ -10,7 +10,7 @@ for (i = 0; i < arrayGuestList.length; i++ ) {
     if ( arrayGuestList[i] == "Nicole") {
         counter++;
         if (counter == 1) {
-            console.log("Found", arrayGuestList[i], "in position", i);
+            console.log("Found", arrayGuestList[i], "in position", i +1);
         }
     }
 }
