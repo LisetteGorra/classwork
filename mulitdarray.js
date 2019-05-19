@@ -30,7 +30,10 @@ for ( i = 0; i < departments.length; i ++ ){ // add empty sub arrays to the empt
 }
 console.log(employeeId); // this wil show the empty arrays
 for ( i = 0;  i < tempSplitInfo.length; i++) {
-    employeeId.splice(departments.indexOf("d001"), 0, tempSplitInfo[0][0] );
+    // employeeId.splice(tempSplitInfo[i][1]), 0, tempSplitInfo[i][0] );
+    console.log(tempSplitInfo[i][1]);
+    console.log(departments.indexOf(tempSplitInfo[i][1]));
+    employeeId[departments.indexOf(tempSplitInfo[i][1])].push(tempSplitInfo[i][0]);
 }
 
 // console.log(tempSplitInfo);
