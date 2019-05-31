@@ -4,11 +4,11 @@ var employee_info = ["10001, Arnell Millhouse", "10002, Phen Thach", "10003, Ale
 var departments = [];
 var employeeId = [];
 var info_Split = [];
-
 for ( var i = 0; i < dpt_employeeId_info.length; i++){
     info_Split.push(dpt_employeeId_info[i].split(", "));
     departments.push(info_Split[i][1]);
 }
+
 departments.sort();
 
 departments = [ ...new Set(departments)];
@@ -16,6 +16,8 @@ departments = [ ...new Set(departments)];
 for (i = 0; i < departments.length; i ++){
     employeeId.push([]);
 }
+
+
 console.log(employeeId);
 console.log(departments);
 
