@@ -2,15 +2,15 @@ var rentalCar = {
     totalDaysRented: 30,
     dailyRate: 50,
     carType: "Sedan",
-    taxRate: .07
+    taxRate: .07,
+    totalBill: function (){
+        var bill = (this.totalDaysRented * this.dailyRate) + ((this.dailyRate * this.totalDaysRented) * this.taxRate);
+        return bill;
+    }
+   
 };
 
-function totalCarBill(){
-    var bill = (rentalCar.totalDaysRented * rentalCar.dailyRate) + ((rentalCar.dailyRate * rentalCar.totalDaysRented) * rentalCar.taxRate);
-    return bill;
-}
-
-console.log(totalCarBill().toLocaleString('en-us', {style: 'currency', currency: 'USD'}));
+console.log(rentalCar.totalBill().toLocaleString('en-us', {style: 'currency', currency: 'USD'}));
 
 // console.log("Your total bill for your rental car is:", bill.toLocaleString('en-us', {style: 'currency', currency: 'USD'})+ "!" );
 
