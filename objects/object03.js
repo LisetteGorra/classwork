@@ -4,8 +4,8 @@ var rentalCar = {
     carType: "Sedan",
     taxRate: .07,
     totalBill: function (){
-        var bill = (this.totalDaysRented * this.dailyRate) + ((this.dailyRate * this.totalDaysRented) * this.taxRate);
-        return bill;
+        return (this.totalDaysRented * this.dailyRate) + ((this.dailyRate * this.totalDaysRented) * this.taxRate);
+        
     }
    
 };
