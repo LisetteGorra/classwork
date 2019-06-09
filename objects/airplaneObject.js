@@ -2,10 +2,12 @@
 
 var bookFlight = {
     airline: "Delta",
+    airPort: "La Guardia",
     ticketPrice: 250,
     taxRate: .08,
     luggage: 25,
     daysGone: 3,
+    numberOfSeats: 1,
     booking: function(){
         return ((this.ticketPrice * this.taxRate) + (this.ticketPrice) + this.luggage);
     }
