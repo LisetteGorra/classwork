@@ -2,15 +2,13 @@ var originalData = "1, Cozmo, Solway, csolway0@yale.edu, Male, 252.122.92.241, 2
 
 var splitArray = originalData.split(", ");
 var convertedData = [];
-splitArray.slice(0,6);
+// splitArray.slice(0,6);
 
-var size = 6;
 var index = 0;
 
-for (var i = 0; i < splitArray.length/10 +4; i++){
-convertedData.push(splitArray.slice(index, index + size));
-index += size;
-}
+for (var i = 0; i < splitArray.length/6; i++){
+convertedData.push(splitArray.slice(index, index+6));
+index = index +6;
+console.log(convertedData[i][3]+ ",", convertedData[i][1]);
     
-
-console.log(convertedData);
+}
