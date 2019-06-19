@@ -1,12 +1,13 @@
 var carObject = {
     types: ["Camry", "Audi", "Camaro"],
-    dailyRate: [35, 56, 85],
-    daysRented: [5, 10, 17],
+    dailyRate: [20, 30, 40],
+    daysRented: [2, 3, 4],
+    total: 0,
     totalRevenue: function () {
         for(var i = 0; i < this.dailyRate.length; i++){
-            var total = this.dailyRate[i]*this.daysRented[i];
+           this.total = this.total + this.dailyRate[i]*this.daysRented[i];
         }
-        return total;
+        return this.total;
     }
 };
 console.log("The total revenue for all cars rented is", carObject.totalRevenue().toLocaleString('en-us', {style: 'currency', currency: 'USD'} ));
